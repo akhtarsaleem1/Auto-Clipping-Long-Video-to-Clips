@@ -1,6 +1,6 @@
 # Crowd Audio Clip Detector
 
-Automatically finds and clips the most exciting moments in videos based on crowd audio spikes.
+Automatically finds and clips the most exciting moments in videos based on crowd audio spikes. Download Tool or use code if fimiliar with coding
 
 ## Installation
 
@@ -31,7 +31,7 @@ python -m crowd_clipper.main VIDEO_PATH [OPTIONS]
 ### Example
 
 ```bash
-python -m crowd_clipper.main wrestling_match.mp4 --output-dir ./highlights --max-clips 5
+python -m crowd_clipper.main video.mp4 --output-dir ./highlights --max-clips 5
 ```
 
 ## How It Works
@@ -40,3 +40,4 @@ python -m crowd_clipper.main wrestling_match.mp4 --output-dir ./highlights --max
 2. **Energy Analysis** - Computes RMS energy envelope to measure loudness
 3. **Spike Detection** - Finds moments where crowd noise exceeds baseline by threshold
 4. **Clip Extraction** - Creates clips with pre-roll and proper end detection
+
